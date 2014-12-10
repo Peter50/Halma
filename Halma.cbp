@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="inc" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,7 +32,31 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.c">
+		<Unit filename="inc/couleur.h" />
+		<Unit filename="inc/pion.h" />
+		<Unit filename="inc/pions.h" />
+		<Unit filename="inc/plateau.h" />
+		<Unit filename="inc/position.h" />
+		<Unit filename="inc/positions.h" />
+		<Unit filename="src/jeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/pion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/pions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/plateau.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/position.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/positions.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

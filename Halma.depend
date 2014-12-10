@@ -3,3 +3,74 @@
 	<stdio.h>
 	<stdlib.h>
 
+1418048194 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jeu.h"
+
+1416946415 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/pion.c
+	<stdio.h>
+	<stdlib.h>
+	"position.h"
+	"couleur.h"
+	"pion.h"
+
+1418047240 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/position.c
+	<stdio.h>
+	<stdlib.h>
+	"position.h"
+
+1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/position.h
+
+1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/couleur.h
+
+1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pion.h
+
+1416946415 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/pions.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"pions.h"
+
+1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pions.h
+
+1418047075 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/plateau.c
+	<stdio.h>
+	<stdlib.h>
+	"pions.h"
+	"position.h"
+	"plateau.h"
+
+1418045411 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/plateau.h
+
+1416946415 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/positions.c
+	<stdio.h>
+	<stdlib.h>
+	"position.h"
+	"positions.h"
+
+1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/positions.h
+
+1418048134 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/jeu.c
+	<stdio.h>
+	<stdlib.h>
+	"plateau.h"
+	"joueur.h"
+	"jeu.h"
+
+1418045572 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/joueur.h
+
+1418045405 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/jeu.h
+
+1418048162 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/joueur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"joueur.h"
+
+1418048059 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/couleur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
