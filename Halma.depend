@@ -3,7 +3,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1418048194 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/main.c
+1418202859 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/main.c
 	<stdio.h>
 	<stdlib.h>
 	"jeu.h"
@@ -15,7 +15,7 @@
 	"couleur.h"
 	"pion.h"
 
-1418047240 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/position.c
+1418222221 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/position.c
 	<stdio.h>
 	<stdlib.h>
 	"position.h"
@@ -34,7 +34,7 @@
 
 1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pions.h
 
-1418047075 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/plateau.c
+1418048830 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/plateau.c
 	<stdio.h>
 	<stdlib.h>
 	"pions.h"
@@ -69,8 +69,15 @@
 	"pion.h"
 	"joueur.h"
 
-1418048059 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/couleur.c
+1418048764 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/couleur.c
 	<stdio.h>
 	<stdlib.h>
 	"couleur.h"
+
+1418222197 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/liste.c
+	<stdio.h>
+	<stdlib.h>
+	"liste.h"
+
+1418220835 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/liste.h
 

@@ -26,3 +26,14 @@ void infoPosition(Position position){
         printf("Position colonne : %d\n",position->y);
     }
 }
+
+void detruirePosition(Position position){
+    free(position);
+}
+
+int positionEgale(Position position,Position position2){
+    if(position->x == position2->x && position2->y==position->y){
+        return 1;
+    }
+    return 0;
+}

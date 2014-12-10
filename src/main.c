@@ -26,15 +26,14 @@ int main(void)
         {
         case 1:
             while(nombre != 2 && nombre != 4){
-                printf("Donner le nombre de joueur total (2 ou 4) ?");
+                printf("Donner le nombre de joueur total (2 ou 4) ? ");
                 scanf("%d",&nombre);
             }
             while(ia > nombre || ia < 0){
-                printf("Donner le nombre d'IA (entre 0 et %d) ?",nombre);
+                printf("Donner le nombre d'IA (entre 0 et %d) ? ",nombre);
                 scanf("%d",&ia);
             }
             jeu=initJeu(nombre,ia);
-
             infoJeu(jeu);
 
             detruireJeu(jeu);
@@ -44,15 +43,16 @@ int main(void)
             // afficher les options
             break;
         case 3:
-            // afficherTutoriel
+            printf("Le je de l'Halma est un jeu de société pouvant se jouer à deux ou quatre joueur\n");
+
             break;
         case 4:
-
+            printf("Bonne fin de journée, au revoir et merci d'avoir jouée");
         break;
 
         default:
             printf("Commande invalide\n");
-            break;
+        break;
         }
     }
 

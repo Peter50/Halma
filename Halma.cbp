@@ -31,14 +31,27 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="inc" />
 		</Compiler>
 		<Unit filename="inc/couleur.h" />
+		<Unit filename="inc/jeu.h" />
+		<Unit filename="inc/joueur.h" />
+		<Unit filename="inc/liste.h" />
 		<Unit filename="inc/pion.h" />
 		<Unit filename="inc/pions.h" />
 		<Unit filename="inc/plateau.h" />
 		<Unit filename="inc/position.h" />
 		<Unit filename="inc/positions.h" />
+		<Unit filename="src/couleur.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/jeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/joueur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/liste.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/main.c">
