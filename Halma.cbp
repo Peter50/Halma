@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="inc" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,6 +32,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="inc/couleur.h" />
+		<Unit filename="inc/pion.h" />
+		<Unit filename="inc/pions.h" />
+		<Unit filename="inc/plateau.h" />
+		<Unit filename="inc/position.h" />
+		<Unit filename="inc/positions.h" />
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
