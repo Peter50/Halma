@@ -17,6 +17,26 @@ Pion initPion(void){
     return pion;
 }
 
+void detruirePion(Pion pion){
+    free(pion);
+}
+
+void setPositionPion(Pion pion, Position position){
+    pion->position=position;
+}
+
+void setCouleurPion(Pion pion, Couleur couleur){
+    pion->couleur=couleur;
+}
+
+Couleur getCouleurPion(Pion pion){
+    return pion->couleur;
+}
+
+Position getPositionPion(Position position){
+    return pion->position;
+}
+
 int pionEstEgale(Pion pion1,Pion pion2){
     if(positionEgale(pion1->position,pion2->position) && pion1->couleur == pion2->couleur){
         return 1;

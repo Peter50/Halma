@@ -1,20 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "couleur.h"
+#include "pion.h"
 #include "position.h"
 
 struct sPosition{
 
     unsigned int x;
     unsigned int y;
+    Couleur couleur;
+    Pion pion;
 
 };
 
-Position initPosition(void){
+Position initPosition(int x,int y){
 
     Position position=malloc(sizeof(struct sPosition));
-    position->x=0;
-    position->y=0;
+    position->x=x;
+    position->y=y;
 
     return position;
 }
@@ -36,4 +40,20 @@ int positionEgale(Position position,Position position2){
         return 1;
     }
     return 0;
+}
+
+Pion getPionPosition(Position position){
+    return position->pion;
+}
+
+void setPionPosition(Position position,Pion pion){
+    position->pion=pion;
+}
+
+Couleur getCouleurPosition(Position position){
+    return position->couleur;
+}
+
+void setCouleurPosition(Position position,Couleur couleur){
+    position->couleur=couleur;
 }

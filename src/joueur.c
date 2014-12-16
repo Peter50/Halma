@@ -60,6 +60,13 @@ void infoJoueur(Joueur joueur){
 }
 
 void detruireJoueur(Joueur joueur){
-
     free(joueur);
+}
+
+int joueurEstIa(Joueur joueur){
+    return joueur->ia;
+}
+
+Couleur getCouleurJoueur(Joueur joueur){
+    return joueur->couleur;
 }

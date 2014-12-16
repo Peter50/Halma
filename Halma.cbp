@@ -33,6 +33,7 @@
 			<Add option="-Wall" />
 			<Add directory="inc" />
 		</Compiler>
+		<Unit filename="inc/console.h" />
 		<Unit filename="inc/couleur.h" />
 		<Unit filename="inc/jeu.h" />
 		<Unit filename="inc/joueur.h" />
@@ -42,6 +43,9 @@
 		<Unit filename="inc/plateau.h" />
 		<Unit filename="inc/position.h" />
 		<Unit filename="inc/positions.h" />
+		<Unit filename="src/console.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/couleur.c">
 			<Option compilerVar="CC" />
 		</Unit>

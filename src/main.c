@@ -33,21 +33,20 @@ int main(void)
                 printf("Donner le nombre d'IA (entre 0 et %d) ? ",nombre);
                 scanf("%d",&ia);
             }
-            jeu=initJeu(nombre,ia);
+            jeu=initJeu(nombre,ia,16);
+            //lancerJeu(jeu);
             infoJeu(jeu);
-
             detruireJeu(jeu);
-            // lancerPartie()
             break;
         case 2:
             // afficher les options
             break;
         case 3:
             printf("Le je de l'Halma est un jeu de société pouvant se jouer à deux ou quatre joueur\n");
-
+            // TODO Faire le tutoriel avec des plateaux pré-enregistré dans les fichier du jeu
             break;
         case 4:
-            printf("Bonne fin de journée, au revoir et merci d'avoir jouée");
+            printf("Bonne fin de journée, au revoir et merci d'avoir jouée\n");
         break;
 
         default:
