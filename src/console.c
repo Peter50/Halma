@@ -7,42 +7,50 @@
 
 #define couleur(param) printf("\033[%sm",param)
 
-void texteCouleur(char * texte,Couleur fond,Couleur police){
+void texteCouleur(char * texte,Couleur fond,Couleur police)
+{
 
-    if(police==fond){
+    #ifdef __linux
+    if(police==fond)
+    {
         police=5;
     }
-    switch(fond){
-        case ROUGE:
-            couleur("41");
+    switch(fond)
+    {
+    case ROUGE:
+        couleur("41");
         break;
-        case BLEU:
-            couleur("43");
+    case BLEU:
+        couleur("43");
         break;
-        case VERT:
-            couleur("44");
+    case VERT:
+        couleur("44");
         break;
-        case JAUNE:
-            couleur("42");
+    case JAUNE:
+        couleur("42");
         break;
     }
-    switch(police){
-        case INCOLORE:
-            couleur("30");
+    switch(police)
+    {
+    case INCOLORE:
+        couleur("30");
         break;
-        case ROUGE:
-            couleur("31");
+    case ROUGE:
+        couleur("31");
         break;
-        case BLEU:
-            couleur("33");
+    case BLEU:
+        couleur("33");
         break;
-        case VERT:
-            couleur("34");
+    case VERT:
+        couleur("34");
         break;
-        case JAUNE:
-            couleur("32");
+    case JAUNE:
+        couleur("32");
         break;
     }
     printf(texte);
     couleur("0");
+    #else
+    printf("%d ",police);
+    #endif
 }

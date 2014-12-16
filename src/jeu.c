@@ -65,12 +65,12 @@ void infoJeu(Jeu jeu){
     printf("Nombre de joueur : %d\n",jeu->nbJoueur);
     printf("Nombre d'IA : %d\n",jeu->nbIa);
     for(i=0;i<jeu->nbJoueur;i++){
-        printf("Joueur N°%d :\n",i);
+        printf("Joueur No%d :\n",i);
         infoJoueur(jeu->joueur[i]);
     }
     printf("Nombre de plateaux : %d\n",jeu->nbPlateau);
     for(i=0;i<jeu->nbPlateau;i++){
-        printf("Info Plateau N°%d :\n",i);
+        printf("Info Plateau No%d :\n",i);
         infoPlateau(jeu->plateau[i]);
     }
 }

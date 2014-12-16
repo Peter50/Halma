@@ -42,6 +42,15 @@ int positionEgale(Position position,Position position2){
     return 0;
 }
 
+unsigned int getXPosition(Position position){
+    return position->x;
+}
+
+unsigned int getYPosition(Position position){
+    return position->y;
+}
+
+
 Pion getPionPosition(Position position){
     return position->pion;
 }

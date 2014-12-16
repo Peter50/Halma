@@ -47,7 +47,7 @@ Joueur initJoueur(int numero, int ia){
 void infoJoueur(Joueur joueur){
 
     printf("Nom du joueur %s\n",joueur->nom);
-    printf("Nombre de caractére du nom du joueur : %d\n",joueur->tailleNom);
+    printf("Nombre de caractere du nom du joueur : %d\n",joueur->tailleNom);
     if(joueur->ia){
         printf("Ce joueur est une IA\n");
     }

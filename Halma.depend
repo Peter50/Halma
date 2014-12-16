@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1385316878 source:c:\users\peter\documents\github\halma\src\main.c
+1418643710 source:c:\users\peter\documents\github\halma\src\main.c
 	<stdio.h>
 	<stdlib.h>
+	"jeu.h"
 
 1418643710 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/main.c
 	<stdio.h>
@@ -95,4 +96,96 @@
 	"couleur.h"
 
 1418646630 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/console.h
+
+1418762428 source:c:\users\peter\documents\github\halma\src\console.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
+1418644252 c:\users\peter\documents\github\halma\inc\couleur.h
+
+1418048764 source:c:\users\peter\documents\github\halma\src\couleur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
+1418761371 source:c:\users\peter\documents\github\halma\src\joueur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"joueur.h"
+
+1416946416 c:\users\peter\documents\github\halma\inc\pion.h
+
+1418045572 c:\users\peter\documents\github\halma\inc\joueur.h
+
+1418222904 source:c:\users\peter\documents\github\halma\src\liste.c
+	<stdio.h>
+	<stdlib.h>
+	"liste.h"
+
+1418220836 c:\users\peter\documents\github\halma\inc\liste.h
+
+1418045406 c:\users\peter\documents\github\halma\inc\jeu.h
+
+1418648020 source:c:\users\peter\documents\github\halma\src\pions.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"liste.h"
+	"pions.h"
+
+1416946416 c:\users\peter\documents\github\halma\inc\pions.h
+
+1418644444 source:c:\users\peter\documents\github\halma\src\position.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"position.h"
+
+1416946416 c:\users\peter\documents\github\halma\inc\position.h
+
+1418223026 source:c:\users\peter\documents\github\halma\src\positions.c
+	<stdio.h>
+	<stdlib.h>
+	"liste.h"
+	"position.h"
+	"positions.h"
+
+1416946416 c:\users\peter\documents\github\halma\inc\positions.h
+
+1418760832 source:c:\users\peter\documents\github\halma\src\jeu.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"pions.h"
+	"plateau.h"
+	"position.h"
+	"positions.h"
+	"joueur.h"
+	"jeu.h"
+
+1418045412 c:\users\peter\documents\github\halma\inc\plateau.h
+
+1418760368 source:c:\users\peter\documents\github\halma\src\pion.c
+	<stdio.h>
+	<stdlib.h>
+	"position.h"
+	"couleur.h"
+	"pion.h"
+
+1418760399 source:c:\users\peter\documents\github\halma\src\plateau.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"console.h"
+	"pion.h"
+	"pions.h"
+	"position.h"
+	"positions.h"
+	"plateau.h"
+
+1418646630 c:\users\peter\documents\github\halma\inc\console.h
 

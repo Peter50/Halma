@@ -33,7 +33,7 @@ Couleur getCouleurPion(Pion pion){
     return pion->couleur;
 }
 
-Position getPositionPion(Position position){
+Position getPositionPion(Pion pion){
     return pion->position;
 }
 

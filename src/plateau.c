@@ -6,6 +6,7 @@
 #include "pion.h"
 #include "pions.h"
 #include "position.h"
+#include "positions.h"
 
 #include "plateau.h"
 
@@ -109,7 +110,12 @@ void placerPion(Plateau plateau, int nbJoueur,Pions * joueurs, Pions liste){
 }
 
 Position getPositionPlateau(Plateau plateau, int x, int y){
-    return plateau->position[x][y];
+
+    if(x>=0 && y>=0 && x<plateau->nbLigne && y<plateau->nbColonne){
+        return plateau->position[x][y];
+    }
+
+    return NULL;
 }
 
 void afficherPlateau(Plateau plateau){
@@ -141,9 +147,50 @@ void afficherPlateau(Plateau plateau){
 
 Positions positionsPossible(Pion pion, Plateau plateau){
 
-    int i,j;
-    position=getPositionPion(pion);
+    Position position=getPositionPion(pion),position1=NULL;
+    Positions positions=initPositions();
+    int x=getXPosition(position),y=getYPosition(position),i,j;
 
-    for(i=)
+    for(i=-1;i<=1;i++){
+        for(j=-1;j<=1;j++){
+            position1=getPositionPlateau(plateau,x+i,y+j);
+            if(position){
+                if(getPionPosition(position)==NULL){
+                    ajouterPosition(positions,position);
+                }
+                else{
+                    position1=getPositionPlateau(plateau,x+(2*i),y+(2*j));
+                    if(position1 && !(getPionPosition(position1)) && !(positionEstDansPositions(positions,position))){
+                        ajouterPosition(positions,position1);
+                        positionRecursif(plateau,position1,positions);
+                    }
+                }
+            }
+        }
+    }
+    return positions;
+}
 
+void positionRecursif(Plateau plateau,Position position,Positions positions){
+
+    int x=getXPosition(position),y=getYPosition(position),i,j;
+    Position position1;
+
+    for(i=-1;i<=1;i++){
+        for(j=-1;j<=1;j++){
+            position1=getPositionPlateau(plateau,x+i,y+j);
+            if(position){
+                if(getPionPosition(position)==NULL){
+                    ajouterPosition(positions,position);
+                }
+                else{
+                    position1=getPositionPlateau(plateau,x+(2*i),y+(2*j));
+                    if(position1 && !(getPionPosition(position1)) && !(positionEstDansPositions(positions,position))){
+                        ajouterPosition(positions,position1);
+                        positionRecursif(plateau,position1,positions);
+                    }
+                }
+            }
+        }
+    }
 }
