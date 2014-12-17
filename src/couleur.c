@@ -18,6 +18,9 @@ void infoCouleur(Couleur couleur){
         case JAUNE:
         printf("JAUNE");
         break;
+        case MAGENTA:
+        printf("MAGENTA");
+        break;
     }
 
 }

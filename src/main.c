@@ -34,8 +34,7 @@ int main(void)
                 scanf("%d",&ia);
             }
             jeu=initJeu(nombre,ia,16);
-            //lancerJeu(jeu);
-            infoJeu(jeu);
+            lancerJeu(jeu);
             detruireJeu(jeu);
             break;
         case 2:

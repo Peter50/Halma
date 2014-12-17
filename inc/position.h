@@ -3,4 +3,6 @@
 
 typedef struct sPosition * Position;
 
+int positionEgale(Position position,Position position2);
+
 #endif // _POSITION_

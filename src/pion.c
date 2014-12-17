@@ -30,10 +30,14 @@ void setCouleurPion(Pion pion, Couleur couleur){
 }
 
 Couleur getCouleurPion(Pion pion){
-    return pion->couleur;
+    if(pion != NULL){
+        return pion->couleur;
+    }
+    return INCOLORE;
 }
 
 Position getPositionPion(Pion pion){
+
     return pion->position;
 }
 

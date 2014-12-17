@@ -70,3 +70,7 @@ int joueurEstIa(Joueur joueur){
 Couleur getCouleurJoueur(Joueur joueur){
     return joueur->couleur;
 }
+
+char * getJoueurNom(Joueur joueur){
+    return joueur->nom;
+}

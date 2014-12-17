@@ -19,6 +19,8 @@ Position initPosition(int x,int y){
     Position position=malloc(sizeof(struct sPosition));
     position->x=x;
     position->y=y;
+    position->pion=NULL;
+    position->couleur=INCOLORE;
 
     return position;
 }
@@ -26,8 +28,8 @@ Position initPosition(int x,int y){
 void infoPosition(Position position){
 
     if(position != NULL){
-        printf("Position ligne : %d\n",position->x);
-        printf("Position colonne : %d\n",position->y);
+        printf("Position ligne : %d\n",position->x+1);
+        printf("Position colonne : %d\n",position->y+1);
     }
 }
 
@@ -52,7 +54,10 @@ unsigned int getYPosition(Position position){
 
 
 Pion getPionPosition(Position position){
-    return position->pion;
+    if(position!=NULL){
+        return position->pion;
+    }
+    return NULL;
 }
 
 void setPionPosition(Position position,Pion pion){

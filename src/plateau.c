@@ -145,6 +145,47 @@ void afficherPlateau(Plateau plateau){
     }
 }
 
+void afficherPlateauPosition(Plateau plateau, Positions positions){
+
+    int i,j;
+    Pion pion;
+    Couleur couleur,couleurCase;
+    Position position=NULL;
+    printf(" \t");
+    for(i=0;i<plateau->nbColonne;i++){
+        printf("%c ",'A'+i);
+    }
+    printf("\n");
+    for(i=0;i<plateau->nbLigne;i++){
+        printf("%d\t",i+1);
+        for(j=0;j<plateau->nbColonne;j++){
+            couleurCase=INCOLORE;
+            couleur=INCOLORE;
+            pion=getPionPosition(plateau->position[i][j]);
+            position=plateau->position[i][j];
+            couleurCase=getCouleurPosition(position);
+            if(positionEstDansPositions(positions,position)){
+                couleurCase=MAGENTA;
+            }
+            if(pion == NULL){
+                if(couleurCase==INCOLORE){
+                    printf(". ");
+                }
+                else{
+                    texteCouleur(". ",couleurCase,couleurCase);
+                }
+            }
+            else{
+                couleur=getCouleurPion(pion);
+                position=plateau->position[i][j];
+                texteCouleur("o ",couleurCase,couleur);
+            }
+        }
+        printf("\n");
+    }
+}
+
+
 Positions positionsPossible(Pion pion, Plateau plateau){
 
     Position position=getPositionPion(pion),position1=NULL;
@@ -154,13 +195,13 @@ Positions positionsPossible(Pion pion, Plateau plateau){
     for(i=-1;i<=1;i++){
         for(j=-1;j<=1;j++){
             position1=getPositionPlateau(plateau,x+i,y+j);
-            if(position){
-                if(getPionPosition(position)==NULL){
-                    ajouterPosition(positions,position);
+            if(position1){
+                if(getPionPosition(position1)==NULL){
+                    ajouterPosition(positions,position1);
                 }
                 else{
                     position1=getPositionPlateau(plateau,x+(2*i),y+(2*j));
-                    if(position1 && !(getPionPosition(position1)) && !(positionEstDansPositions(positions,position))){
+                    if(position1 && !(getPionPosition(position1)) && !(positionEstDansPositions(positions,position1))){
                         ajouterPosition(positions,position1);
                         positionRecursif(plateau,position1,positions);
                     }
@@ -179,13 +220,10 @@ void positionRecursif(Plateau plateau,Position position,Positions positions){
     for(i=-1;i<=1;i++){
         for(j=-1;j<=1;j++){
             position1=getPositionPlateau(plateau,x+i,y+j);
-            if(position){
-                if(getPionPosition(position)==NULL){
-                    ajouterPosition(positions,position);
-                }
-                else{
+            if(position1){
+                if(getPionPosition(position1)!=NULL){
                     position1=getPositionPlateau(plateau,x+(2*i),y+(2*j));
-                    if(position1 && !(getPionPosition(position1)) && !(positionEstDansPositions(positions,position))){
+                    if(position1 && !(getPionPosition(position1)) && !(positionEstDansPositions(positions,position1))){
                         ajouterPosition(positions,position1);
                         positionRecursif(plateau,position1,positions);
                     }

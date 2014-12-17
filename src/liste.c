@@ -83,6 +83,10 @@ int estDansListe(Liste liste,void * contenu,int (*egal)(void * element1,void * e
 {
     liste->courant=liste->tete;
 
+    if(liste->tete==NULL){
+        return 0;
+    }
+
     do{
         if(egal(contenu,liste->courant->contenu)){
             return 1;
@@ -102,14 +106,24 @@ int listeEstVide(Liste liste){
 
 void * listeCourant(Liste liste){
     if(!(listeEstVide(liste))){
-        return liste->tete->contenu;
+        return liste->courant->contenu;
     }
 
     return NULL;
 }
 
+void * listeTete(Liste liste){
+    if(!(listeEstVide(liste))){
+        return liste->tete->contenu;
+    }
+    return NULL;
+}
 
 void elementSuivant(Liste liste){
     liste->courant=liste->courant->suivant;
+}
+
+void resetListe(Liste liste){
+    liste->courant=liste->tete;
 }
 

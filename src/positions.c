@@ -5,9 +5,6 @@
 #include "position.h"
 #include "positions.h"
 
-
-// Songer a implémenter un TAD liste commmun au type positions et pions
-
 struct sPositions{
     Liste liste;
 };
@@ -30,7 +27,14 @@ void ajouterPosition(Positions positions, Position position){
 }
 
 int positionEstDansPositions(Positions positions, Position position){
-    return estDansListe(positions->liste,position,positionEgale());
+    if(positions != NULL){
+        return estDansListe(positions->liste,position,positionEgale);
+    }
+    return 0;
+}
+
+Position positionTete(Positions positions){
+    return listeTete(positions->liste);
 }
 
 Position positionCourant(Positions positions){
@@ -39,6 +43,30 @@ Position positionCourant(Positions positions){
 
 void positionSuivant(Positions positions){
     elementSuivant(positions->liste);
+}
+void resetPosition(Positions positions){
+    if(positions != NULL){
+        resetListe(positions->liste);
+    }
+}
+
+int positionEstVide(Positions positions){
+    if(positions == NULL != positionTete(positions) == NULL){
+        return 1;
+    }
+    return 0;
+}
+
+void infoPositions(Positions positions){
+
+    if(!(positionEstVide(positions))){
+        Position position;
+        resetPosition(positions);
+        do{
+            infoPosition(positionCourant(positions));
+            positionSuivant(positions);
+        }while(positionCourant(positions)!=positionTete(positions));
+    }
 }
 
 

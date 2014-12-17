@@ -8,6 +8,7 @@ typedef enum Couleur{
     JAUNE,
     VERT,
     INCOLORE,
+    MAGENTA,
 
 }Couleur;
 

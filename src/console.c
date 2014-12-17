@@ -28,7 +28,10 @@ void texteCouleur(char * texte,Couleur fond,Couleur police)
         break;
     case JAUNE:
         couleur("42");
-        break;
+    break;
+    case  MAGENTA:
+        couleur("45);
+    break;
     }
     switch(police)
     {
