@@ -3,6 +3,7 @@
 
 #include "couleur.h"
 #include "pion.h"
+#include "pions.h"
 #include "joueur.h"
 
 struct sJoueur{
@@ -10,7 +11,7 @@ struct sJoueur{
     char * nom;
     int tailleNom;
     Couleur couleur;
-    Pion * pion;
+    Pions pions;
     int ia;
 
 };
@@ -18,7 +19,7 @@ struct sJoueur{
 Joueur initJoueur(int numero, int ia){
 
     Joueur joueur=malloc(sizeof(struct sJoueur));
-    joueur->pion=NULL;
+    joueur->pions=initPions();
     joueur->couleur=numero-1;
     joueur->ia=ia;
 
@@ -60,6 +61,7 @@ void infoJoueur(Joueur joueur){
 }
 
 void detruireJoueur(Joueur joueur){
+    detruirePions(joueur->pions);
     free(joueur);
 }
 
@@ -71,6 +73,15 @@ Couleur getCouleurJoueur(Joueur joueur){
     return joueur->couleur;
 }
 
+void ajouterPionJoueur(Joueur joueur, Pion pion){
+    ajouterPion(joueur->pions,pion);
+}
+
+Pions getPionsJoueur(Joueur joueur){
+    return joueur->pions;
+}
+
 char * getJoueurNom(Joueur joueur){
     return joueur->nom;
 }
+

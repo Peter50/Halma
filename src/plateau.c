@@ -5,6 +5,7 @@
 #include "console.h"
 #include "pion.h"
 #include "pions.h"
+#include "joueur.h"
 #include "position.h"
 #include "positions.h"
 
@@ -33,6 +34,21 @@ Plateau initPlateau(int taille){
     }
     return plateau;
 
+}
+
+void detruirePlateau(Plateau plateau){
+
+    int i,j;
+
+    for(i=0;i<plateau->nbLigne;i++){
+        for(j=0;j<plateau->nbColonne;j++){
+            detruirePosition(plateau->position[i][j]);
+        }
+        free(plateau->position[i]);
+    }
+    free(plateau->position);
+
+    free(plateau);
 }
 
 void infoPlateau(Plateau plateau){
@@ -123,6 +139,8 @@ void afficherPlateau(Plateau plateau){
     int i,j;
     Pion pion;
     Couleur couleur,couleurCase;
+    Position position;
+
     printf(" \t");
     for(i=0;i<plateau->nbColonne;i++){
         printf("%c ",'A'+i);
@@ -131,9 +149,18 @@ void afficherPlateau(Plateau plateau){
     for(i=0;i<plateau->nbLigne;i++){
         printf("%d\t",i+1);
         for(j=0;j<plateau->nbColonne;j++){
+            couleurCase=INCOLORE;
+            couleur=INCOLORE;
             pion=getPionPosition(plateau->position[i][j]);
+            position=plateau->position[i][j];
+            couleurCase=getCouleurPosition(position);
             if(pion == NULL){
-                printf(". ");
+                if(couleurCase==INCOLORE){
+                    printf(". ");
+                }
+                else{
+                    texteCouleur(". ",couleurCase,couleurCase);
+                }
             }
             else{
                 couleur=getCouleurPion(pion);
@@ -146,6 +173,7 @@ void afficherPlateau(Plateau plateau){
 }
 
 void afficherPlateauPosition(Plateau plateau, Positions positions){
+
 
     int i,j;
     Pion pion;

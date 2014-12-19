@@ -19,6 +19,10 @@ void detruirePions(Pions pions){
     free(pions);
 }
 
+Pion pionTete(Pions pion){
+    return listeTete(pion->liste);
+}
+
 Pion pionCourant(Pions pions){
     return listeCourant(pions->liste);
 }
@@ -33,4 +37,12 @@ void ajouterPion(Pions pions,Pion pion){
 
 int pionEstDansPions(Pions pions,Pion pion){
     return estDansListe(pions,pion,pionEstEgale());
+}
+
+Pion pionAleatoire(Pions pions){
+    return elementAleatoire(pions->liste);
+}
+
+Pion resetPions(Pions pions){
+    resetListe(pions->liste);
 }

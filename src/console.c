@@ -21,34 +21,33 @@ void texteCouleur(char * texte,Couleur fond,Couleur police)
         couleur("41");
         break;
     case BLEU:
-        couleur("43");
-        break;
-    case VERT:
         couleur("44");
         break;
-    case JAUNE:
+    case VERT:
         couleur("42");
-    break;
+        break;
+    case JAUNE:
+        couleur("43");
+        break;
     case  MAGENTA:
-        couleur("45);
+        couleur("45");
     break;
     }
     switch(police)
     {
     case INCOLORE:
-        couleur("30");
         break;
     case ROUGE:
         couleur("31");
         break;
     case BLEU:
-        couleur("33");
-        break;
-    case VERT:
         couleur("34");
         break;
-    case JAUNE:
+    case VERT:
         couleur("32");
+        break;
+    case JAUNE:
+        couleur("33");
         break;
     }
     printf(texte);

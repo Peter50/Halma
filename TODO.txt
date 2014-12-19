@@ -1,1 +1,0 @@
-Identifier et corriger un bug qui afcchier tous les caractére asci un plein de fois (bug matrix)

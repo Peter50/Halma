@@ -13,7 +13,6 @@ Positions initPositions(void){
 
     Positions positions=malloc(sizeof(struct sPositions));
     positions->liste=initListe();
-
     return positions;
 }
 
@@ -34,6 +33,9 @@ int positionEstDansPositions(Positions positions, Position position){
 }
 
 Position positionTete(Positions positions){
+    if(positions == NULL){
+        return NULL;
+    }
     return listeTete(positions->liste);
 }
 
@@ -51,7 +53,7 @@ void resetPosition(Positions positions){
 }
 
 int positionEstVide(Positions positions){
-    if(positions == NULL != positionTete(positions) == NULL){
+    if(positions == NULL || positionTete(positions) == NULL){
         return 1;
     }
     return 0;
@@ -69,4 +71,6 @@ void infoPositions(Positions positions){
     }
 }
 
-
+Position positionAleatoire(Positions positions){
+    return elementAleatoire(positions->liste);
+}

@@ -4,98 +4,105 @@
 	<stdlib.h>
 	"jeu.h"
 
-1418643710 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/main.c
+1418990260 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/main.c
 	<stdio.h>
 	<stdlib.h>
 	"jeu.h"
 
-1418643921 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/pion.c
+1418805761 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/pion.c
 	<stdio.h>
 	<stdlib.h>
 	"position.h"
 	"couleur.h"
 	"pion.h"
 
-1418644444 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/position.c
+1418985175 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/position.c
 	<stdio.h>
 	<stdlib.h>
 	"couleur.h"
 	"pion.h"
 	"position.h"
 
-1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/position.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/position.h
 
-1418644251 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/couleur.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/couleur.h
 
-1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pion.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pion.h
 
-1418305920 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/pions.c
+1418984551 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/pions.c
 	<stdio.h>
 	<stdlib.h>
 	"pion.h"
 	"liste.h"
 	"pions.h"
 
-1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pions.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/pions.h
 
-1418647230 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/plateau.c
+1418921673 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/plateau.c
 	<stdio.h>
 	<stdlib.h>
 	"couleur.h"
 	"console.h"
 	"pion.h"
 	"pions.h"
+	"joueur.h"
 	"position.h"
+	"positions.h"
 	"plateau.h"
 
-1418045411 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/plateau.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/plateau.h
 
-1418223025 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/positions.c
+1418917706 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/positions.c
 	<stdio.h>
 	<stdlib.h>
 	"liste.h"
 	"position.h"
 	"positions.h"
 
-1416946415 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/positions.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/positions.h
 
-1418643707 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/jeu.c
+1418985683 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/jeu.c
 	<stdio.h>
 	<stdlib.h>
+	"pion.h"
 	"pions.h"
 	"plateau.h"
+	"position.h"
+	"positions.h"
 	"joueur.h"
 	"jeu.h"
 
-1418045572 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/joueur.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/joueur.h
 
-1418045405 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/jeu.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/jeu.h
 
-1418048162 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/joueur.c
+1418919466 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/joueur.c
 	<stdio.h>
 	<stdlib.h>
 	"couleur.h"
 	"pion.h"
+	"pions.h"
 	"joueur.h"
 
-1418048764 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/couleur.c
+1418797539 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/couleur.c
 	<stdio.h>
 	<stdlib.h>
 	"couleur.h"
 
-1418222904 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/liste.c
+1418985493 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/liste.c
 	<stdio.h>
 	<stdlib.h>
+	"time.h"
 	"liste.h"
 
-1418220835 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/liste.h
+1418919997 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/liste.h
 
-1418647301 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/console.c
+1418909728 source:/home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/src/console.c
 	<stdio.h>
 	<stdlib.h>
 	"couleur.h"
 
-1418646630 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/console.h
+1418797539 /home/eleves/promo17/info/pelay/Documents/1ére Année 2/Projet/Halma-master/inc/console.h
 
 1418780390 source:c:\users\peter\documents\github\halma\src\console.c
 	<stdio.h>
@@ -188,4 +195,204 @@
 	"plateau.h"
 
 1418646630 c:\users\peter\documents\github\halma\inc\console.h
+
+1418909728 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/console.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/couleur.h
+
+1418797539 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/couleur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
+1418916552 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/jeu.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"pions.h"
+	"plateau.h"
+	"position.h"
+	"positions.h"
+	"joueur.h"
+	"jeu.h"
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/pion.h
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/pions.h
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/plateau.h
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/position.h
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/positions.h
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/joueur.h
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/jeu.h
+
+1418911005 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/joueur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"pions.h"
+	"joueur.h"
+
+1418916246 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/liste.c
+	<stdio.h>
+	<stdlib.h>
+	"time.h"
+	"liste.h"
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/liste.h
+
+1418797539 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jeu.h"
+
+1418805761 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/pion.c
+	<stdio.h>
+	<stdlib.h>
+	"position.h"
+	"couleur.h"
+	"pion.h"
+
+1418910617 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/pions.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"liste.h"
+	"pions.h"
+
+1418915361 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/plateau.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"console.h"
+	"pion.h"
+	"pions.h"
+	"joueur.h"
+	"position.h"
+	"positions.h"
+	"plateau.h"
+
+1418797539 /home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/inc/console.h
+
+1418806329 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/position.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"position.h"
+
+1418916767 source:/home/eleves/promo17/info/pelay/.local/share/Trash/files/Halma-master.2/src/positions.c
+	<stdio.h>
+	<stdlib.h>
+	"liste.h"
+	"position.h"
+	"positions.h"
+
+1418909728 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/console.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/couleur.h
+
+1418797539 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/couleur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+
+1418916552 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/jeu.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"pions.h"
+	"plateau.h"
+	"position.h"
+	"positions.h"
+	"joueur.h"
+	"jeu.h"
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/pion.h
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/pions.h
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/plateau.h
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/position.h
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/positions.h
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/joueur.h
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/jeu.h
+
+1418911005 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/joueur.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"pions.h"
+	"joueur.h"
+
+1418916246 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/liste.c
+	<stdio.h>
+	<stdlib.h>
+	"time.h"
+	"liste.h"
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/liste.h
+
+1418797539 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	"jeu.h"
+
+1418805761 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/pion.c
+	<stdio.h>
+	<stdlib.h>
+	"position.h"
+	"couleur.h"
+	"pion.h"
+
+1418910617 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/pions.c
+	<stdio.h>
+	<stdlib.h>
+	"pion.h"
+	"liste.h"
+	"pions.h"
+
+1418915361 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/plateau.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"console.h"
+	"pion.h"
+	"pions.h"
+	"joueur.h"
+	"position.h"
+	"positions.h"
+	"plateau.h"
+
+1418797539 /home/eleves/promo17/info/pelay/Desktop/Halma-master.2/inc/console.h
+
+1418806329 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/position.c
+	<stdio.h>
+	<stdlib.h>
+	"couleur.h"
+	"pion.h"
+	"position.h"
+
+1418916767 source:/home/eleves/promo17/info/pelay/Desktop/Halma-master.2/src/positions.c
+	<stdio.h>
+	<stdlib.h>
+	"liste.h"
+	"position.h"
+	"positions.h"
 

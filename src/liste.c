@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "time.h"
 #include "liste.h"
 
 struct sListe
 {
     Element tete;
     Element courant;
+    int nombre;
 
 };
 
@@ -24,22 +26,19 @@ Liste initListe(void)
     Liste liste=malloc(sizeof(struct sListe));
     liste->tete=NULL;
     liste->courant=NULL;
+    liste->nombre=0;
 
     return liste;
 }
 
 void detruireListe(Liste liste)
 {
-
     Element element=NULL;
     liste->courant=liste->tete;
-    while(liste->courant!=NULL)
+    while(!(listeEstVide(liste)))
     {
-        element=liste->courant->suivant;
-        detruireElement(liste->courant);
-        liste->courant=element;
+        detruireEnTete(liste);
     }
-
     free(liste);
 }
 Element initElement(void * contenu)
@@ -77,6 +76,32 @@ void ajouterTete(Liste liste,void * contenu)
         element->precedent=element;
         liste->courant=element;
     }
+    liste->nombre++;
+}
+
+void detruireEnTete(Liste liste){
+
+    Element element=liste->tete;
+
+    if(liste->tete->suivant  != liste->tete)
+    {
+        if(liste->tete == liste->courant){
+            liste->courant=liste->tete->suivant;
+        }
+        element->precedent->suivant=element->suivant;
+        element->suivant->precedent=element->precedent;
+        liste->tete=element->suivant;
+
+        detruireElement(element);
+    }
+    else
+    {
+        detruireElement(liste->tete);
+        liste->tete=NULL;
+        liste->courant=NULL;
+    }
+    liste->nombre--;
+
 }
 
 int estDansListe(Liste liste,void * contenu,int (*egal)(void * element1,void * element2))
@@ -127,3 +152,11 @@ void resetListe(Liste liste){
     liste->courant=liste->tete;
 }
 
+void * elementAleatoire(Liste liste){
+    resetListe(liste);
+    int ran=rand()%liste->nombre,i;
+    for(i=0;i<ran;i++){
+        elementSuivant(liste);
+    }
+    return listeCourant(liste);
+}
